@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        12.8.55
+Version:        13.0.39
 Release:        1%{?dist}
 Summary:        CUDA cuxxfilt (demangler)
 License:        CUDA Toolkit
@@ -49,6 +49,9 @@ install -m 0644 -p -D lib/libcufilt.a %{buildroot}%{_libdir}/libcufilt.a
 %{_libdir}/libcufilt.a
 
 %changelog
+* Mon Aug 25 2025 Simone Caronni <negativo17@gmail.com> - 1:13.0.39-1
+- Update to 13.0.39.
+
 * Fri Feb 07 2025 Simone Caronni <negativo17@gmail.com> - 1:12.8.55-1
 - Update to 12.8.55.
 
